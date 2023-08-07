@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Michroma&display=swap');
+
+body {
+	font-family: Michroma, serif;
+	background: linear-gradient(90deg, #000a66 0%, #000000 100%);
+}
+
+p {
+	color: white;
+}
+
+.navbar-brand img {
+	width: 50px;
+	height: 35px	;
+}
+
+.sidebar {
+	color: white;
+	background: linear-gradient(270deg, #000a66 0%, #000000 100%);
+}
+
+.card {
+	background: linear-gradient(270deg, #000a66 0%, #000000 100%);
+	color: white;
+}
+
+.card a {
+	text-decoration: none;
+	color: white;
+}
+
+.wobble-anim {
+	animation: WobbleAnim 2s ease 0s infinite normal forwards;
+}
+
+@keyframes WobbleAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+.carousel-text,
+.footer-text {
+	color: white;
+	margin: auto auto;
+}
+
+footer,
+.btn-outline-primary {
+	background: linear-gradient(270deg, #000a66 0%, #000000 100%);
+}
+
+.media-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width: 755px) {
+	.carousel-indicators {
+		display: none;
+	}
+}
